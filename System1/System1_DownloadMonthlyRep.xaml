@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>977.6,3205.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>977.6,3204.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_DownloadMonthlyRep_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
@@ -76,7 +76,13 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Enter tax ID, enter year and for each month, download report if exists (treat &#xD;&#xA;exceptions)&#xD;&#xA;&#xD;&#xA;Pre-condition: Logged in and on the &#xD;&#xA;download monthly report page, report &#xD;&#xA;directory exists&#xD;&#xA;&#xD;&#xA;Post-action: Downloaded all &#xD;&#xA;available reports for &#xD;&#xA;a given TaxID and &#xD;&#xA;a given year into a given location" DisplayName="System1_DownloadMonthlyRep" sap:VirtualizedContainerService.HintSize="988,3140.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="Enter tax ID, enter year and for each month, download report if exists (treat &#xD;&#xA;exceptions)&#xD;&#xA;&#xD;&#xA;Pre-condition: Logged in and on the &#xD;&#xA;download monthly report page, report &#xD;&#xA;directory exists&#xD;&#xA;&#xD;&#xA;Post-action: Downloaded all &#xD;&#xA;available reports for &#xD;&#xA;a given TaxID and &#xD;&#xA;a given year into a given location" DisplayName="System1_DownloadMonthlyRep" sap:VirtualizedContainerService.HintSize="988,3140" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="MonthsArr">
         <Variable.Default>
@@ -91,7 +97,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="946.4,2860" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44bd0efc3a614719992a703a16dcd312" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="946.4,2860" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44bd0efc3a614719992a703a16dcd312" Selector="&lt;html app='msedge.exe' title='ACME System 1 *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
