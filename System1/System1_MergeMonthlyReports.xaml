@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1102.4,1544</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1102.4,1620.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_MergeMonthlyReports_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -84,7 +84,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1112.8,1479.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap2010:Annotation.AnnotationText="Merge the downloaded &#xD;&#xA;csv from a given TaxID &#xD;&#xA;and a year, located &#xD;&#xA;into a certain folder, &#xD;&#xA;into one excel file -&#xD;&#xA;yearly report" sap:VirtualizedContainerService.HintSize="1112.8,1556" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_YearlyReport" />
       <Variable x:TypeArguments="s:String[]" Name="FilesArray" />
