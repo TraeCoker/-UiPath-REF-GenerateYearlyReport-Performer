@@ -2,9 +2,6 @@
   <x:Members>
     <x:Property Name="in_Comment" Type="InArgument(x:String)" />
     <x:Property Name="in_Status" Type="InArgument(x:String)" />
-    <x:Property Name="in_WorkItemsURL" Type="InArgument(x:String)" />
-    <x:Property Name="in_WIID" Type="InArgument(x:String)" />
-    <x:Property Name="argument1" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
