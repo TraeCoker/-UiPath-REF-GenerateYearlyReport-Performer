@@ -110,7 +110,7 @@
         <OutArgument x:TypeArguments="s:String[]">[FilesArray]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_ReportDirPath)]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_ReportDirPath+"\"+in_TaxID.ToString)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[Index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1071.2,799.2" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[FilesArray]">

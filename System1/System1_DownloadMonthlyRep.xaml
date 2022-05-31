@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>977.6,3204.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>977.6,3104.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_DownloadMonthlyRep_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
@@ -81,7 +81,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Enter tax ID, enter year and for each month, download report if exists (treat &#xD;&#xA;exceptions)&#xD;&#xA;&#xD;&#xA;Pre-condition: Logged in and on the &#xD;&#xA;download monthly report page, report &#xD;&#xA;directory exists&#xD;&#xA;&#xD;&#xA;Post-action: Downloaded all &#xD;&#xA;available reports for &#xD;&#xA;a given TaxID and &#xD;&#xA;a given year into a given location" DisplayName="System1_DownloadMonthlyRep" sap:VirtualizedContainerService.HintSize="988,3140" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Enter tax ID, enter year and for each month, download report if exists (treat &#xD;&#xA;exceptions)&#xD;&#xA;&#xD;&#xA;Pre-condition: Logged in and on the &#xD;&#xA;download monthly report page, report &#xD;&#xA;directory exists&#xD;&#xA;&#xD;&#xA;Post-action: Downloaded all &#xD;&#xA;available reports for &#xD;&#xA;a given TaxID and &#xD;&#xA;a given year into a given location" DisplayName="System1_DownloadMonthlyRep" sap:VirtualizedContainerService.HintSize="988,3040" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="MonthsArr">
         <Variable.Default>
@@ -96,13 +96,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="946.4,2860" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44bd0efc3a614719992a703a16dcd312" Selector="&lt;html app='msedge.exe' title='ACME System 1 *' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="946.4,2760" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44bd0efc3a614719992a703a16dcd312" Selector="&lt;html app='msedge.exe' title='ACME System 1 *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="912.8,2712.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="912.8,2612.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -117,7 +117,6 @@
               </Assign.Value>
             </Assign>
             <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="871.2,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[ClientDirPath]" />
-            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="871.2,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_DownloadReportURL]" />
             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  vendorTaxID'" sap:VirtualizedContainerService.HintSize="871.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_TaxID]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e15a083-280b-46dd-a595-5697c472e6ba" InformativeScreenshot="7af8cc9b07f182ab0cef85f43b5d25ca" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
@@ -386,7 +385,7 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7ce22e42-1efd-454b-9488-c1534c2880fd" InformativeScreenshot="4fa24a2584dc5c9bb5f16f9ac0aaef73" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Download Monthly Report and 4 more pages - Work *' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7ce22e42-1efd-454b-9488-c1534c2880fd" InformativeScreenshot="4fa24a2584dc5c9bb5f16f9ac0aaef73" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 *' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
