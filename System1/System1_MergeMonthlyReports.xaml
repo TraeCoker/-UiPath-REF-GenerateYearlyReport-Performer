@@ -160,10 +160,10 @@
         <OutArgument x:TypeArguments="x:String">[YearlyReportPath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[in_ReportDirPath + "\YearlyReport" + "-" + in_Year + "-" + in_TaxID +".xlsx"]</InArgument>
+        <InArgument x:TypeArguments="x:String">[in_ReportDirPath + "\" + in_TaxID]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_YearlyReport]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="1071.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" WorkbookPath="[YearlyReportPath]" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_YearlyReport]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="1071.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" WorkbookPath="[YearlyReportPath + &quot;\YearlyReport&quot; + &quot;-&quot; + in_Year + &quot;-&quot; + in_TaxID +&quot;.xlsx&quot;]" />
     <Assign sap:VirtualizedContainerService.HintSize="1071.2,60" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_YearlyReportPath]</OutArgument>

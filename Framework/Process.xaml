@@ -173,9 +173,6 @@
         <InArgument x:TypeArguments="x:String" x:Key="in_Status">
           <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Status&quot;).ToString" />
         </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_WorkItemsURL" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_WIID" />
-        <InArgument x:TypeArguments="x:String" x:Key="argument1" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
